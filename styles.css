@@ -4,6 +4,26 @@ body {
   height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.overlay{
+    /* position: fixed;  */
+    /* Sit on top of the page content */
+  
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 3, 3, 0.5); /* Black background with opacity */
+  /* z-index: 2; Specify a stack order in case you're using a different order for other elements */
+  /* cursor: pointer; */
+   /* Add a pointer on hover 
+  */
+  display: block;
+  z-index:99999;
+  position: absolute;
+  padding-bottom: 60px;
+}
 
 section {
   background: black;
@@ -12,8 +32,9 @@ section {
   background-image: url("https://www.reliancedigital.in/wp-content/uploads/2019/02/netflix_movies_cover.jpg");
   background-size: cover;
   padding-bottom: 70px;
-  box-shadow: inset -20px -20px 0px 10px rgb(48, 45, 45);
+  /* box-shadow: inset -20px -20px 0px 10px rgb(48, 45, 45); */
   /* opacity: 0.7; */
+  rgba(0,0,0,0.5);
 }
 .navbar img {
   width: 15%;
@@ -45,6 +66,7 @@ section {
 }
 .container {
   padding-top: 20px;
+  
 }
 .container h1 {
   padding-top: 80px;
